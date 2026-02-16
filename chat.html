@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatWithOne.com - Chat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="sidebar">
+            <div class="user-info">
+                <h2>Welcome, <span id="currentUser"></span>!</h2>
+                <button onclick="logout()" class="btn-logout">Logout</button>
+            </div>
+            
+            <div class="online-users">
+                <h3>Online Users</h3>
+                <ul id="userList">
+                    <li>Loading users...</li>
+                </ul>
+            </div>
+            
+            <div class="all-users">
+                <h3>All Users</h3>
+                <ul id="allUsersList">
+                    <li>Loading users...</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="chat-area">
+            <div class="chat-header">
+                <h3 id="chatHeader">Select a user to chat</h3>
+            </div>
+            
+            <div class="messages" id="messages">
+                <div class="no-chat">
+                    <p>👈 Select a user from the list to start chatting!</p>
+                </div>
+            </div>
+            
+            <div class="chat-input">
+                <input type="text" id="messageInput" placeholder="Type a message..." disabled>
+                <button onclick="sendMessage()" id="sendBtn" class="btn-send" disabled>Send</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>

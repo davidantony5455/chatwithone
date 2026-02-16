@@ -1,0 +1,13 @@
+{
+  "name": "chatwithone.com",
+  "version": "1.0.0",
+  "description": "Chat website where users can register, login and chat with each other",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.2"
+  }
+}
